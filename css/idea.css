@@ -70,6 +70,7 @@ body {
     width: 50%;
     text-align: center;
     font-weight: bold;
+    color: #0096C7;
 }
 
 #info {
@@ -77,6 +78,10 @@ body {
     font-size: 20px;
 }
 
+#reasoning {
+    padding: 5%;
+    text-align: left;
+}
 .link {
     background-color: #0c112a;
     font-weight: bold;
