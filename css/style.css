@@ -1,13 +1,12 @@
 /* General styles */
 * {
-    color: #CAF0F8;
+    color: #f2fdff;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
-    background: #fff3b0;
 }
 
 /* Navbar styles */
@@ -18,15 +17,14 @@ body {
 
 .navlink {
     font-weight: bold;
+    font-size: 2vw;
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 5px;
     margin: 10px;
     width: 25%;
     text-align: center;
     text-decoration: none;
-
 }
 
 /* Header styles */
@@ -36,14 +34,13 @@ body {
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 /* Content styles */
 #content {
     padding: 20px;
-    color: #432818;
-    background: linear-gradient(to bottom, rgb(0, 119, 182), rgb(59, 179, 244));
+    background: linear-gradient(to bottom, rgb(0, 119, 182), rgb(0, 148, 227));
 }
 
 #intro {
@@ -64,7 +61,7 @@ body {
 }
 
 #introtext {
-    font-size: 25px;
+    font-size: 2vw;
     width: 50%;
     text-align: center;
     font-weight: bold;
@@ -80,6 +77,7 @@ body {
     padding: 5%;
     text-align: left;
 }
+
 .link {
     background-color: #0c112a;
     font-weight: bold;
@@ -93,6 +91,49 @@ body {
     text-decoration: none;
 }
 
+.fullscreentile {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.infotile {
+    margin: auto;
+    width: 20%;
+    text-align: center;
+
+    img {
+        margin-left: 5%;
+        margin-right: 5%;
+
+        width: 80%;
+    }
+}
+
+.infotext {
+    margin: auto;
+    padding: 5%;
+    font-size: 1.5vw;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+
+}
 
 /* Footer styles */
 #footer {
@@ -133,12 +174,29 @@ body {
         padding-bottom: 10%;
     }
 
-    #infotext {
-        padding-bottom: 5%;
-    }
 
     .link {
         width: 5%;
+    }
+
+    .fullscreentile {
+        display: block;
+    }
+
+    .infotile {
+        width: 60%;
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+    }
+
+    .name{
+        font-size: 4vw;
+    }
+
+    .infotext{
+        font-size: 4vw;
     }
 
     #entries {
