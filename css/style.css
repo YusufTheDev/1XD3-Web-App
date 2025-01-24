@@ -39,13 +39,11 @@ body {
     font-size: 30px;
 }
 
-
-
 /* Content styles */
 #content {
-    background: #0077B6;
     padding: 20px;
     color: #432818;
+    background: linear-gradient(to bottom, rgb(0, 119, 182), rgb(59, 179, 244));
 }
 
 #intro {
