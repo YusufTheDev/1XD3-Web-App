@@ -4,21 +4,26 @@
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     font-family: Arial, sans-serif;
     margin: 0px;
     height: 100%;
 }
 
 
-#container{
+#container {
     min-height: 100%;
+    display: contents;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navbar styles */
 #navbar {
     background: #00B4D8;
     display: flex;
+    height: 10%;
 }
 
 .navlink {
@@ -30,13 +35,14 @@ html,body {
     margin: 10px;
     width: 25%;
     text-align: center;
+    align-content: center;
     text-decoration: none;
 }
 
 /* Header styles */
 #header {
     background: #0077B6;
-    height: 20%;
+    min-height: 20%;
     padding-top: 2%;
     padding-bottom: 7%;
     text-align: center;
@@ -55,6 +61,7 @@ html,body {
 
 /* Content styles */
 #content {
+    min-height: 65%;
     padding: 20px;
     background: linear-gradient(to bottom, rgb(0, 119, 182), rgb(0, 148, 227));
 }
@@ -153,10 +160,12 @@ html,body {
 
 /* Footer styles */
 #footer {
+    min-height: 5%;
     text-align: center;
+    align-content: center;
     padding: 10px;
     background: #03045E;
-    height: 10%;
+
 }
 
 
@@ -168,9 +177,7 @@ html,body {
         font-size: 2.5vw;
     }
 
-    #content{
-        min-height: 75vh;
-    }
+    #content {}
 
     #intro {
         flex-direction: column;
