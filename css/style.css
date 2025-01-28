@@ -114,6 +114,11 @@ body {
     text-decoration: none;
 }
 
+.center{
+    width: 100%;
+    text-align: center;
+}
+
 .fullscreentile {
     margin-top: 5%;
     margin-bottom: 10%;
@@ -126,6 +131,14 @@ body {
     img {
         width: 100%;
     }
+}
+
+.halfscreentile{
+    width: 50%;
+}
+
+.halfhalfscreentile{
+    height: 50%;
 }
 
 .title {
@@ -144,6 +157,10 @@ body {
 
         width: 80%;
     }
+}
+
+.infotitle{
+    font-size: 3vw;
 }
 
 .infotext {
@@ -178,15 +195,13 @@ body {
         font-size: 2.5vw;
     }
 
-    #content {}
-
     #intro {
         flex-direction: column;
         padding-bottom: 10%;
     }
 
     #introtext {
-        font-size: 20px;
+        font-size: 2vw;
         padding-bottom: 20%;
         width: 80%;
     }
@@ -214,6 +229,17 @@ body {
         display: block;
     }
 
+    .halfscreentile{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .halfhalfscreentile{
+        margin-top: 15%;
+        height: 35%;
+    }
+
     .infotile {
         width: 60%;
         display: block;
@@ -226,11 +252,16 @@ body {
         font-size: 4vw;
     }
 
+    .infotitle{
+        font-size: 6vw;
+
+    }
+
     .infotext {
         font-size: 4vw;
     }
 
     #entries {
-        font-size: 20px;
+        font-size: 2vw;
     }
 }
