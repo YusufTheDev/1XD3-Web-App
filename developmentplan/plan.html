@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Plan</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <a class="navlink" href="../index.html">Home</a>
+            <a class="navlink" href="../about.html">About Us</a>
+            <a class="navlink" href="../showcase.html">Showcase</a>
+            <a class="navlink" href="../project.html">Our Projects</a>
+        </nav>
+        <div class="header">
+            <h1>Infinite Travel - Development Plan</h1>
+        </div>
+        <div id="content">
+            <div class="info">
+                <div class="largeinfo">
+                    <h2>1. Names</h2>
+                    <ul>
+                        <li><strong>Team:</strong> DreamWeaver</li>
+                        <li><strong>Names:</strong> Tianyan, Yusuf, David, Edward</li>
+                        <li><strong>Client Name:</strong> Darim Khan</li>
+                        <li><strong>Application Name:</strong> Infinite Travel</li>
+                    </ul>
+
+                    <h2>2. Purpose</h2>
+                    <p>The project is an endless runner game where users can log in, play, earn a score, and appear on a leaderboard. Players can upgrade abilities like double jumps, extra lives, and weapons to enhance gameplay. The game features a clean, minimalist interface and is accessible on both mobile and desktop.</p>
+
+                    <h2>3. Data Description</h2>
+                    <h3>User Information Table</h3>
+                    <p><strong>Why is this needed?</strong> Stores user login details and their highest score.</p>
+                    <ul>
+                        <li>Fields: user_id (primary key), username, password_hash, email, best_score</li>
+                    </ul>
+
+                    <h3>Score Leaderboard Table</h3>
+                    <p><strong>Why is this needed?</strong> Tracks user scores for leaderboard ranking.</p>
+                    <ul>
+                        <li>Fields: score_id (primary key), user_id, score</li>
+                    </ul>
+
+                    <h2>4. Functions Performed by the Application</h2>
+                    <h3>User Authentication</h3>
+                    <ul>
+                        <li><strong>Login:</strong> Users log in with their credentials (Database: SELECT)</li>
+                        <li><strong>Register:</strong> Users create an account (Database: INSERT)</li>
+                        <li><strong>Logout:</strong> Users log out (Client-side: Clear session/cookies)</li>
+                    </ul>
+
+                    <h3>Playing the Game</h3>
+                    <ul>
+                        <li><strong>Start Game:</strong> Loads the game and initializes player stats.</li>
+                        <li><strong>Pause/Resume Game:</strong> Players can pause/resume the game.</li>
+                        <li><strong>Game Over:</strong> Ends the session and displays stats.</li>
+                    </ul>
+
+                    <h3>Score & Leaderboard Management</h3>
+                    <ul>
+                        <li><strong>Save Score:</strong> Saves the player's score to the leaderboard (Database: INSERT)</li>
+                        <li><strong>Retrieve Leaderboard:</strong> Displays the top scores (Database: SELECT)</li>
+                    </ul>
+
+                    <h3>Upgrades & Shop System</h3>
+                    <ul>
+                        <li><strong>Purchase Upgrades:</strong> Players buy power-ups (Database: UPDATE)</li>
+                        <li><strong>Equip/Unequip Upgrades:</strong> Allows players to activate/deactivate abilities.</li>
+                    </ul>
+
+                    <h3>Profile Management</h3>
+                    <ul>
+                        <li><strong>View Profile:</strong> Displays user stats and scores (Database: SELECT)</li>
+                        <li><strong>Change Password:</strong> Updates user password (Database: UPDATE)</li>
+                    </ul>
+
+                    <h2>5. The Role of PHP and JavaScript</h2>
+                    <p><strong>PHP:</strong> Handles user login, registration, saving scores, and retrieving leaderboard data.</p>
+                    <p><strong>JavaScript:</strong> Used for game logic inside the Canvas element, including rendering, player movement, collision detection, and UI interactions.</p>
+
+                    <h2>6. Roles of Team Members</h2>
+                    <ul>
+                        <li><strong>Tianyan:</strong> Handles login features and leaderboard management.</li>
+                        <li><strong>Yusuf:</strong> Manages core game functionality and score tracking.</li>
+                        <li><strong>David:</strong> Designs character, animations, and game environment.</li>
+                        <li><strong>Edward:</strong> Implements attack mechanics and interactions.</li>
+                    </ul>
+
+                    <h2>7. The Increments</h2>
+                    <p><strong>Target Date:</strong> April 3rd, 2025</p>
+                    <h3>Functionality for Each Team Member</h3>
+                    <ul>
+                        <li><strong>Tianyan:</strong> User login system (PHP backend, JavaScript for AJAX)</li>
+                        <li><strong>Yusuf:</strong> Game movement logic and progress handling (JavaScript)</li>
+                        <li><strong>David:</strong> Basic character design and Canvas setup (JavaScript, CSS)</li>
+                        <li><strong>Edward:</strong> Scrolling background animation (JavaScript)</li>
+                    </ul>
+                    <h3>Description of the Increment</h3>
+                    <p>This first increment will focus on foundational features: the user login system, character movement, and game environment setup. Players will be able to log in and start the game, with a simple character and a scrolling background representing the endless runner environment.</p>
+
+                    <h2>8. Client Feedback</h2>
+                    <p><strong>Feedback:</strong> The client expressed approval of the idea and had no major concerns. The only requested change was to add some form of attacking to make the game more engaging.</p>
+                    <p><strong>Client Quote:</strong> "It would be more fun if players could attack obstacles instead of just avoiding them."</p>
+                    <p><strong>Implementation Plan:</strong> Introduce objects that move across the screen and can be destroyed by the player using ranged attacks, rewarding them with extra points or other benefits.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">&copy;DreamWeaver, McMaster University, 2025</div>
+    </div>
+</body>
+
+</html>
