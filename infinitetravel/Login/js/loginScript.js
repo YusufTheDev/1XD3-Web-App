@@ -24,7 +24,9 @@ window.addEventListener("load", function () {
             fetch(url)
                 .then(response => response.text()) // retrieves the response text
                 .then(function (response) {
-                    message.innerHTML = response; // displays the message from the server
+                    //jump to main menu
+                    window.location.href = "../MainMenu/index.php";
+
                 })
                 .catch(error => console.log(error)); // catches any errors
         }
