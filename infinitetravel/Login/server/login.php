@@ -25,7 +25,7 @@ function login($stmt, $password)
 
     //login the user
     $_SESSION["userName"] = $row["userName"];
-    echo ("Login successful. Username: " . $_SESSION["userName"]);
+    echo("true");
 }
 
 //start session

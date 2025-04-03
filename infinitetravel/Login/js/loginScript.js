@@ -24,8 +24,19 @@ window.addEventListener("load", function () {
             fetch(url)
                 .then(response => response.text()) // retrieves the response text
                 .then(function (response) {
-                    //jump to main menu
-                    window.location.href = "../MainMenu/index.php";
+
+                    if (response == "true") {
+                        //error
+                        error.innerHTML = "";
+
+                        //jump to main menu
+                        window.location.href = "../MainMenu/index.php";
+                    }
+                    else{
+                        //error
+                        error.innerHTML = response;
+                    }
+
 
                 })
                 .catch(error => console.log(error)); // catches any errors
@@ -58,7 +69,7 @@ window.addEventListener("load", function () {
     let message = document.getElementById("message");
 
     //check local storage for userName and password
-    if (localStorage.userName && localStorage.password){
+    if (localStorage.userName && localStorage.password) {
         userName.value = localStorage.userName;
         password.value = localStorage.password;
     }

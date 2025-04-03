@@ -13,7 +13,7 @@ $isLoggedIn = isset($_SESSION['userName']);
     <title>Infinite Travel - Main Menu</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menuStyle.css">
     <script src="js/script.js"></script>
 </head>
 
@@ -25,12 +25,13 @@ $isLoggedIn = isset($_SESSION['userName']);
         if ($isLoggedIn) {
             echo '<a href="../game/play.html" class="button"><p>Play</p></a>';
             echo '<a href="upgrades.html" class="button"><p>Upgrades</p></a>';
-            echo '<a href="instructions.html" class="button"><p>Tutorial</p</a>';
+            echo '<a href="instructions.html" class="button"><p>Tutorial</p></a>';
             echo '<a href="account.html" class="button"><p>Account</p></a>';
-            echo '<input type = "button" value = "logout" id = "logout">';
+            echo '<a  class = "button" id="logout"><p>logout</p></a>';
+
         } else {
-            echo '<a href="../SignUp/index.html"><h1>Sign Up</h1></a>';
-            echo '<a href="../Login/index.html"><h1>Login</h1></a>';
+            echo '<a href="../SignUp/index.html" class = "button"><h2>Sign Up</h2></a>';
+            echo '<a href="../Login/index.html" class = "button"><h2>Login</h2></a>';
         }
         ?>
 
