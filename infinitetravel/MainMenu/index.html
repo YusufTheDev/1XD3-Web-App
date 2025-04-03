@@ -15,10 +15,51 @@
         <a href="../Login/index.html"><h1>Login</h1></a>
         <a href="../game/play.html" class="button">Play</a>
         <a href="upgrades.html" class="button">Upgrades</a>
-        <a href="tutorial.html" class="button">Tutorial</a>
+        <a href="instructions.html" class="button">Tutorial</a>
         <a href="account.html" class="button">Account</a>
         <a href="logout.html" class="button">Logout</a>
     </div>
+
+    <style>
+        #menu {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #menu h1 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+
+        #menu a {
+            width: 50%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            display: block;
+        }
+
+        #menu a.button {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: rgb(18, 18, 18);
+            background-color: #bdf493;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #menu a.button:hover {
+            color:white;
+            background-color: #2684e9;
+        }
+    </style>
 
     <div id="gameContainer" style="display: none;">
         <canvas id="gameCanvas"></canvas>
